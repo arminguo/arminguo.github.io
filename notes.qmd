@@ -1,0 +1,7 @@
+---
+title: "Notes"
+---
+
+This page is reserved for future research notes, reading notes, and code-related records connected to ongoing work.
+
+Updates will be added as projects develop.

@@ -1,150 +1,78 @@
 /*-- scss:defaults --*/
 
-/* 主题颜色定义 */
-$theme-black: #4c4c4c;
-$theme-white: white;
-$theme-grey: #e9ecef;
+$body-bg: #fcfbff;
+$body-color: #2f2b3a;
+$link-color: #6f5aa8;
+$link-hover-color: #4f3f7d;
+$navbar-bg: #dccff3;
+$navbar-fg: #2f2b3a;
+$headings-color: #3b3158;
+$code-color: #5b467f;
+$code-bg: #f4effb;
+$border-color: #ddd4ee;
 
-$theme-purple3: #88398A;
-$theme-purple4: #9d709e;
-$theme-purple5: #562457;
-$theme-purplebrown1: #b996a4;
-$theme-purplebrown2: #7c6c84;
-$theme-darkcoffee1: #570e06;
-$theme-darkcoffee2: #78504b;
-$theme-darkcoffee3: #632e0d;
-$theme-milkcoffee0: #f2ece3;
-$theme-milkcoffee3: #cca79f;
-$theme-milkcoffee2: #b98f68;
-$theme-milkcoffee1: #9e736a;
-$theme-mocha1: #7f2606;
-$theme-mocha2: #9a4c28;
-$theme-mocha3: #b46939;
-$theme-orange: #f9af11;
-$theme-pumpkin: #d05808;
-$theme-darkgreen1: #355E3B;
-$theme-darkgreen2: #445740;
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap');
 
-/* 新增红色变量定义 */
-$red: #ff0000; /* 定义红色变量 */
-$blue: #0000ff;  /* 定义蓝色变量 */
-
-/* 主要背景和字体颜色 */
-$body-bg: $theme-white;
-$body-color: $theme-darkcoffee1; /* 正文字体颜色 */
-$headings-color: $theme-milkcoffee2; /* 标题字体颜色 */
-$link-color: $red; /* 默认超链接颜色 */
-
-/* 代码样式 */
-$code-color: $theme-mocha2; /* 代码文本颜色 */
-$code-bg: $theme-milkcoffee0; /* 代码背景颜色 */
-$code-block-bg-alpha: -0.8; /* 代码块背景的透明度 */
-$background-color: $theme-milkcoffee0; /* 页面背景色 */
-
-/* 导航栏 */
-$navbar-bg: $theme-darkgreen1; /* 导航栏背景颜色 */
-
-/* 提示框颜色 */
-$callout-color-note: $theme-darkgreen2; /* 提示框的注释颜色 */
-$callout-color-tip: $theme-darkgreen1; /* 提示框的小贴士颜色 */
-
-/* 字体设置 */
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code_Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
-
-$font-family-sans-serif: 'Lato', sans-serif; /* 无衬线字体 */
-$font-family-monospace: 'Source Code Pro', monospace; /* 等宽字体 */
-$font-poppins: 'Poppins', sans-serif; 
-$font-pt: 'PT Serif', sans-serif;
-$font-cabin: 'Cabin', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
-$font-prompt: 'Prompt', sans-serif;
-
-$font-size-root: 16px; /* 根字体大小 */
-
-/* 链接颜色 */
-$link-color: $red; /* 链接的颜色为红色 */
-$link-hover-color: $blue; /* 链接悬停时的颜色 */
+$font-family-sans-serif: 'Work Sans', sans-serif;
+$font-family-serif: 'Source Serif 4', serif;
+$font-family-monospace: ui-monospace, SFMono-Regular, Menlo, monospace;
 
 /*-- scss:rules --*/
 
-/* 1. 正文行间距和字体颜色调整 */
 body {
-  line-height: 1.7; /* 正文的行间距设置为 1.7 */
-  color: #000000; /* 正文字体颜色为黑色 */
+  line-height: 1.75;
 }
 
-/* 2. 列表项的行间距调整 */
-ul, ol {
-  line-height: 1.7; /* 列表项的行间距设置为 1.7 */
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  letter-spacing: -0.01em;
 }
 
-/* 3. 超链接颜色和悬停颜色调整 */
+.navbar {
+  border-bottom: 1px solid rgba(59, 49, 88, 0.12);
+}
+
+.hero-banner {
+  padding: 4rem 1.5rem 3rem;
+  margin: 1.5rem 0 2.5rem;
+  background: linear-gradient(135deg, #f5f0fc 0%, #ede5fb 100%);
+  border: 1px solid #e2d7f4;
+  border-radius: 18px;
+}
+
+.hero-banner h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+.hero-banner p {
+  max-width: 48rem;
+  font-size: 1.08rem;
+}
+
+.btn-academic {
+  display: inline-block;
+  margin-right: 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid #baa7df;
+  border-radius: 999px;
+  color: #3b3158;
+  background: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+
+.btn-academic:hover {
+  color: #ffffff;
+  background: #6f5aa8;
+  border-color: #6f5aa8;
+}
+
+.quarto-title-banner {
+  background: transparent;
+}
+
 a {
-  color: #0066cc; /* 超链接的颜色设置为蓝色 */
-  text-decoration: none; /* 去除默认的下划线 */
-}
-
-a:hover {
-  color: #006400; /* 悬停时的颜色设置为深绿色 */
-}
-
-/* 4. 代码样式高亮调整，背景为浅灰色，github 风格 */
-code {
-  color: #d63384; /* 代码文本的颜色，使用 GitHub 风格的红色 */
-  background-color: #f5f5f5; /* 代码块的背景色为浅灰色 */
-  padding: 2px 4px; /* 增加内边距，使代码更加突出 */
-  border-radius: 3px; /* 为代码块添加圆角 */
-  font-family: Consolas, 'Courier New', monospace; /* 设置字体为等宽字体 */
-}
-
-/* 标题样式 */
-h1 {
-  color: $theme-darkcoffee3;
-  font-family: $font-pt;
-  font-size: 40px;
-}
-
-h2 {
-  color: $theme-darkcoffee3;
-  font-family: $font-pt;
-  font-size: 30px;
-}
-
-h3, h4 {
-  color: $theme-mocha1;
-  font-family: $font-pt;
-}
-
-h4 {
-  color: $theme-darkgreen1;
-}
-
-/* 代码块和推送样式 */
-.render-commit-push {
-  padding: 0.5em 0.5em 0em 3em;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background: #f8f8f8 5px center/3em no-repeat;
-  border-top: 1px solid #5B888C;
-  border-bottom: 1px solid #5B888C;
-  background-size: 2em;
-  background-position: 0.5em 0.5em;
-}
-
-.pull {
-  padding: 0.5em 0.5em 0em 3em;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background: #f8f8f8 5px center/3em no-repeat;
-  border-top: 1px solid #E0A890;
-  border-bottom: 1px solid #E0A890;
-  background-size: 1em;
-  background-position: 1em 0.5em;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
 }

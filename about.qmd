@@ -2,4 +2,8 @@
 title: "About"
 ---
 
-连玉君的个人主页
+Hongming Guo is an economics graduate student working in labor economics and consumption economics. His research centers on how labor market change affects workers, households, and welfare outcomes, with particular interest in gender differences in labor market experience and the distributional implications of structural transformation.
+
+His current projects examine two broad themes. The first studies gender and labor market outcomes, including how institutions, household roles, and market structure may shape inequality in work and earnings. The second investigates automation, service-sector transformation, and household welfare, with attention to how technological and sectoral shifts affect consumption, time allocation, and well-being.
+
+More broadly, he is interested in empirical work that connects labor market dynamics to household behavior. His goal is to develop research that is careful in identification, transparent in interpretation, and relevant to questions in applied microeconomics.
