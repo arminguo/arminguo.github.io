@@ -7,6 +7,10 @@ page-layout: full
 
 # Hongming Guo
 
+::: {.profile-photo}
+![](images/ghm.jpg)
+:::
+
 Economics Graduate Student
 
 I am a graduate student in economics with research interests in labor economics and consumption economics. My current work focuses on gender and labor market outcomes, as well as the effects of automation and service-sector transformation on household welfare.

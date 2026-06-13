@@ -76,3 +76,17 @@ a {
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.14em;
 }
+
+.profile-photo {
+  text-align: center;
+  margin: 1.5rem auto 2rem auto;
+}
+
+.profile-photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
