@@ -5,7 +5,7 @@ project:
 website:
   page-navigation: true
   title: "Hongming Guo"
-  favicon: images/site-logo.png
+  favicon: images/logo.png
 
   page-footer:
     left: |
